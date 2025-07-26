@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Page</title>
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="course logo.jpeg" type="image/x-icon">
+    <style>
+        *{
+    padding: 0;
+    margin: 0;
+
+}
+
+body{
+    background-color: #DFC5FE;
+    height: 2300px;
+}
+
+.navbar{
+    height: 90px;
+    background-color: white;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.navbar a{
+    margin: 10px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color:#9d86ba;
+    margin-top: 40px;
+}
+.navbar a:hover{
+    color: rgb(200, 60, 200);
+}
+.about{
+    display: flex;
+    margin-right: 50px;
+}
+.navbar img{
+    margin-left: 20px;
+    height: 85px;
+    width: 100px;
+
+}
+img{
+    height:600px;
+    width: 100%
+}
+
+.course{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.course .box{
+    height:250px;
+    width: 200px;
+    background-color: aliceblue;
+    border-radius: 8px;
+    border:1px solid black;
+    margin: 20px;
+    padding: 10px;
+    margin-top: -50px;
+    margin-bottom: 100px;
+    transition: transform .2s;
+}
+.course .box img{
+    height: 150px;
+    width: 180px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.course .box p{
+    font-family: cursive;
+    color:#b88af1;
+}
+.course .box .para{
+    font-size: 12px;
+    color: rgb(226, 130, 226);
+}
+.course .box:hover{
+    transform: scale(1.1);
+    border-bottom: 4px solid pink;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    color: plum;
+}
+
+.about {
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+    margin-bottom: 30px;
+}
+.about .box2{
+    height: 300px;
+    width: 1000px;
+    background-color: white;
+    border-radius: 8px;
+    align-items: center;
+    text-align: center;
+    transition: transform.1s;
+}
+.about .box2 h2{
+    color: #9d86ba;
+    margin-top: 50px;
+    font-family: cursive;
+}
+.about .box2 p{
+    font-family: cursive;
+    color: rgb(238, 146, 238);
+    margin: 20px;
+    font-size: 18px;
+}
+.about .box2:hover{
+    transform: scale(1.05);
+    border-bottom: 8px solid pink;
+    border-top: 8px solid pink;
+}
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 160px;
+}
+.contact .box3{
+    width: 800px;
+    height: 250px;
+    background-color: aliceblue;
+    border-radius: 5px;
+    margin-bottom: 50px;
+    margin-top: 500px;
+   
+}
+.contact .box3 p{
+    margin: 20px;
+    font-family: cursive;
+    color: palevioletred;
+}
+.contact .box3 p b{
+    color:#9d86ba;
+}
+.contact .box3 h2{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+    transition: transform .2s;
+    font-family: cursive;
+    color: rgb(161, 217, 235);
+}
+.contact .box3:hover{
+    transform: scale(1.05);
+    border-left:  6px solid pink ;
+    border-right: 6px solid pink;
+}
+.course a{
+    text-decoration: none;
+}
+
+
+footer{
+    height: 500px;
+    background-color: #ffff;
+    margin-top: 410px;
+}
+footer .h img{
+    height: 150px;
+    width: 150px;
+    align-items: left;
+}
+footer .h{
+    display: flex;
+    justify-content: space-evenly;
+}
+footer .h a{
+    margin-top: 60px;
+    font-size: large;
+    font-family: cursive;
+}
+footer .h2 p{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: bolder;
+    font-family: cursive;
+    margin-top: 20px ;
+    margin: px;
+}
+footer .h2{
+    display: flex;
+    justify-content: space-evenly;
+    font-family: cursive;
+}
+footer .h2 ul{
+    display: block;
+    margin: 15px;
+    font-size: 15px;
+}
+footer i{
+    align-items: end;
+}
+footer .h2 .tc{
+    width: 150px;
+}
+footer.h2 .hc{
+    width: 200px;
+}
+footer .h2 .hc p{
+    font-size: 20px;
+}
+footer .h2 .tc p{
+    font-size: 20px;
+}
+footer .h2 .hc ul{
+    margin-left: 30px;
+}
+footer .last{
+    height: 20%;
+    background-color: #9d86ba;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+footer .last i{
+    font-size: 25px;
+    margin: 3px;
+}
+footer .last p{
+    margin: 10px;
+    display: flex;
+}
+footer .last .one{
+    display: flex;
+    justify-content: center;
+}
+    </style>
+</head>
+<body>
+    <div id="home">
+        <div class="main">
+        <div class="navbar">
+           <img src="logo.png" alt="logo"> 
+            <div class="about">
+            <a href="#H">Home</a>
+            <a href="#A">About</a>
+            <a href="#C">Courses</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#CT">Contact Us</a>
+        </div>
+        </div>
+    </div>
+        <div ><img src="C:\Users\rcs\Documents\amazons\\bg4.jpg"></div>
+    </div>
+    <div id="C">
+        <div class="course">
+         <a href="C:\Users\rcs\Documents\random\mini\\basic.html">
+            <div class="box">
+                <img src="C:\Users\rcs\Documents\random\\basic.png">
+                <p><b>Basic Computer</b></p>
+                <p class="para">In basic of computer you will learn to operate the pc and Typing</p>
+            </div>
+        </a>
+        <a href="C:\Users\rcs\Documents\random\mini\cyber.html">
+            <div class="box">
+                <img src="C:\Users\rcs\Documents\random\\cyber.png">
+                <p><b>Cyber Security</b></p>
+                <p class="para">Cyber Security can hack anywebsite or you can make your account safe fromit</p>
+            </div>
+        </a>
+        <a href="C:\Users\rcs\Documents\random\mini\ms.html">
+             <div class="box">
+                <img src="C:\Users\rcs\Documents\random\\word.png">
+                <p><b>MS Word</b></p>
+                <p class="para">In Ms word/excel you can create many tables or can anything.... </p>
+            
+            </div>
+        </a>
+        <a href="C:\Users\rcs\Documents\random\mini\tally.html">
+            <div class="box">
+                <img src="C:\Users\rcs\Documents\random\\tally.png">
+                <p><b>Tally</b></p>
+                <p class="para">Tally is used for accountings it is must for   </p>
+            
+            </div>
+        </a>
+        <a href="C:\Users\rcs\Documents\random\mini\gaming.html">
+            <div class="box">
+                <img src="C:\Users\rcs\Documents\random\\game.jpg">
+                <p><b>Gaming</b></p>
+                <p class="para">In the field of Gaming there are many carriers</p>
+            
+            </div>
+        </a>
+        <a href="C:\Users\rcs\Documents\random\mini\dca.html">
+            <div class="box">
+                <img src="C:\Users\rcs\Documents\random\\dca.jpg">
+                <p><b>DCA & PGDCA</b></p>
+                <p class="para">In The course of DCA and PGDCA you can get certificate  </p>
+            
+            </div>
+        </a>
+        <a href="C:\Users\rcs\Documents\random\mini\painting.html">
+            <div class="box">
+                <img src="C:\Users\rcs\Documents\random\\paint2.jpg">
+                <p><b>Painting</b></p>
+                <p class="para">In computer we can paint and there are alot options to use.... </p>
+            
+            </div>
+        </a>
+        <a href="C:\Users\rcs\Documents\random\mini\coding.html">
+            <div class="box">
+                <img src="C:\Users\rcs\Documents\random\\code.jpg">
+                <p><b>Web Designing</b></p>
+                <p class="para">Web Designing contains alots of languages like Html, Css, jva script etc... </p>
+            </div>
+        </a>
+         </div>
+    </div>
+    <div id="A">
+        <div class="about">
+          <div class="box2">
+          <h2>About Us</h2>
+          <p>We will teach a complete course from basic to advanced and then we will make sure that the student has understood everything. The teachers have done Master of Science (MS) in Computer Science or Software Engineering. We will take exams after completing the parts of    </p>
+          </div>
+        </div>
+    </div>
+    <div id="gallery">
+        
+    </div>
+    <div id="CT">
+        <div class="contact">
+        <div class="box3">
+            <h2>Contact Us:</h2>
+            <p><b>Director:</b> Yukta Sonkar</p>
+            <p><b>Address:</b> Ashwani Nagar Raipur Chhattisgarh</p>
+            <p><b>Phone number:</b>  +91...........</p>
+            <p><b>Email:</b>   @..........</p>
+        </div>
+        </div>
+    </div>
+    <footer>
+        <div class="h">
+            <img src="C:\Users\rcs\Documents\random\mini\\logo.png">
+            <a>Get Admission</a>
+            <a>Pay fee online</a>
+            <a>Get certificate</a>
+            <a>Fee structure</a>
+            <a>Recommended apps</a>
+            <a>Notes</a>
+        </div>
+        <div class="h2">
+            <div class="tc">
+            <p>Top Courses</p>
+            <uL>
+                <a>Basic Of The Computer</a>
+                <a>Cyber Security</a>
+                <a>Ms World</a>
+                <a>Tally</a>
+                <a>Gaming</a>
+                <a>Dca & Pgdca</a>
+                <a>Painting</a>
+                <a>Coding/Web Designing</a>
+            </uL>
+            </div>
+            <div class="tc">
+            <p>Certificates</p>
+                <ul>
+                    <a>Dca</a>
+                    <br>
+                    <a>Pgda</a>
+                    <br>
+                    <a>Cyber security</a>
+                    <br>
+                    <a>Tally</a>
+                    <br>
+                    <a>Python</a>
+                    <br>
+                    <a>Html</a>
+                    <br>
+                    <a>Css</a>
+                    <br>
+                    <a>Php</a>
+                    <br>
+                    <a>SQR</a>
+                    <br>
+                    <a>Java script</a>
+                    <br>
+                </ul>
+            </div>
+            <div class="tc">
+                <p>Top Places</p>
+                <ul>
+                    <a>Mumbai</a>
+                    <br>
+                    <a>Kota</a>
+                    <br>
+                    <a>Chennai</a>
+                    <br>
+                    <a>Raipur</a>
+                    <br>
+                    <a>Bhilai</a>
+                    <br>
+                    <a>Delhi</a>
+                    <br>
+                    <a>Lucknow</a>
+                    <br>
+                    <a>Bhuneshwar</a>
+                    <br>
+
+                </ul>
+
+            </div>
+            <div class="hc">
+                <p>Our Facilities</p>
+                <ul>
+                    <a>200+ Teachers</a>
+                    <br>
+                    <a>20+ Places</a>
+                    <br>
+                    <a>1000+ students</a>
+                    <br>
+                    <a>classrooms with Ac</a>
+                    <br>
+                    <a>Comfortable chairs</a>
+                    <br>
+                    <a>2000+ latest Computers</a>
+                    <br>
+                    <a>10+ classes in each Place </a>
+                    <br>
+                    <a>Job Grantee</a>
+                    <br>
+                    <a>Encouraging</a>
+                    <br>
+                </ul>
+
+            </div>
+            
+            
+        </div>
+        <div class="last">
+        <div>        
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-youtube"></i>
+        <i class="fa-brands fa-github"></i>
+        <i class="fa-brands fa-instagram"></i>
+        </div>
+        <div>&copy;2025 All Rights Are Reserved</div>
+        <div class="one">        
+        <p>Help</p>
+        <p>Privacy</p>
+        <p>Policy</p>
+        </div>
+
+        </div>
+    </footer>
+
+
+</body>
+</html>
